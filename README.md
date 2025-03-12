@@ -88,7 +88,7 @@ sudo docker run -it --rm text-leech-bot-by-ashu
 ```
 start - 🦋 ʙᴏᴛ ᴀʟɪᴠᴇ ᴄʜᴇᴋɪɴɢ
 stop - 🔥 ᴜᴘʟᴏᴀᴅ sᴛᴏᴘ
-uplod - ➕ ᴛxᴛ ғɪʟᴇ ᴜᴘʟᴏᴀᴅ
+loveyou - ➕ ᴛxᴛ ғɪʟᴇ ᴜᴘʟᴏᴀᴅ
 ```
 
 ## Connect with me <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px">
