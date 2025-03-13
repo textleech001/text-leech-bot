@@ -99,7 +99,7 @@ upload - ➕ ᴛxᴛ ғɪʟᴇ ᴜᴘʟᴏᴀᴅ
 </p>
  
 -----
-Credits: 🎖️<a href="https://github.com/textleech001/text-leech-bot">𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</a>  🎖️<a href="https://github.com/textleech001/text-leech-bot">TXTLEECH001</a> 
+Credits: 🎖️<a href="https://github.com/textleech001/text-leech-bot">KING</a>  🎖️<a href="https://github.com/textleech001/text-leech-bot">TXTLEECH001</a> 
 
 Last Edited on: 13/03/2025, 6:52:31 PM
 
