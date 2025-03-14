@@ -13,7 +13,13 @@ db.insert_user(1, "username")
 user = db.get_user(1)
 print(user)
 db.close()
-db.close_connection()
+
+app2 = Client(
+    "Text-Leech-Bot",
+    bot_token=BOT_TOKEN,
+    api_id=API_ID,
+    api_hash=API_HASH,
+)
 
 @app2.on_message(filters.command("start") & filters.private)
 async def start_command(_, message: Message):
@@ -42,4 +48,6 @@ async def leech_doc(_, message: Message):
 @app2.on_message(filters.audio & filters.private)
 async def leech_audio(_, message: Message):
     await message.reply_text(text=message.audio.file_id)
-`
+
+app2.start()
+app2.idle()
