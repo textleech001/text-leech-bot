@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserDeactivated, UserDeactivatedBan, ChatWriteForbidden
-from database import Database
+
 from info import info
 
 from info import BOT_TOKEN, BOT_USERNAME, API_ID, API_HASH
@@ -80,4 +80,12 @@ def index():
 if __name__ == '__main__':
 
     app.run(debug=True)
+
+from database import Database
+
+app = Flnameme__)
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
+db.init_app(app)
+
+database = Database()
 
