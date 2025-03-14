@@ -66,6 +66,10 @@ def hrt(seconds, precision = 0):
 
 timer = Timer()
 
+temp
+# utils.py
+def temp():     # yeh funtion kuch bhi kr skta he
+
 # Powered By KING
 async def progress_bar(current, total, reply, start):
     if timer.can_send():
