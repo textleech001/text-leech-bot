@@ -11,7 +11,7 @@ from database import Database
 db = Database("database.db")
 db.create_table()
 
-
+Insert a user (commented out or removed)
 
 db.insert_user(1, "username")
 
