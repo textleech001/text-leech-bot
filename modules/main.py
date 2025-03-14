@@ -83,7 +83,7 @@ if __name__ == '__main__':
 
 from database import Database
 
-app = Flnameme__)
+app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db.init_app(app)
 
