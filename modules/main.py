@@ -1,6 +1,8 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserDeactivated, UserDeactivatedBan, ChatWriteForbidden
+
+#main.py
 from info import info
 from info import BOT_TOKEN, BOT_USERNAME, API_ID, API_HASH
 from utils import temp
