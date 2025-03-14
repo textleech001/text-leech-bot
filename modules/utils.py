@@ -4,7 +4,7 @@ import os
 from pyrogram.errors import FloodWait
 
 class Timer:
-    def __init__(self, time_between=5):
+    def init(self, time_between=5):
         self.start_time = time.time()
         self.time_between = time_between
 
@@ -64,40 +64,43 @@ def hrt(seconds, precision = 0):
 
 
 
-timer = Timer()
-
-#Powered By KING
-async def progress_bar(current, total, reply, start):
-def temp():
-    if timer.can_send():
-        # Your logic to be executed if the condition is true
-        print("Can send message!")
-    else:
+timer = Timer()  
+  
+# Powered By KING  
+async def progress_bar(current, total, reply, start):  
+    if timer.can_send():  
+        print("Can send message!")  
+    else:  
         print("Cannot send message.")
-        now = time.time()
-        diff = now - start
-        if diff < 1:
-            return
-        else:
-            perc = f"{current * 100 / total:.1f}%"
-            elapsed_time = round(diff)
-            speed = current / elapsed_time
-            remaining_bytes = total - current
-            if speed > 0:
-                eta_seconds = remaining_bytes / speed
-                eta = hrt(eta_seconds, precision=1)
-            else:
-                eta = "-"
-            sp = str(hrb(speed)) + "/s"
-            tot = hrb(total)
-            cur = hrb(current)
-            bar_length = 11
-            completed_length = int(current * bar_length / total)
-            remaining_length = bar_length - completed_length
-            progress_bar = "◆" * completed_length + "◇" * remaining_length
-            try:
-                await reply.edit(f'\n** 𝐔𝐩𝐥𝐨𝐝𝐢𝐧𝐠 \n├⚡️ {progress_bar}|﹝{perc}﹞ \n├🚀 Speed » {sp} \n├📟 Processed » {cur}\n├🧲 Size - ETA » {tot} - {eta} \n╰─══ ✪ KING PROJECT ✪ ══─★**\n')
-            except FloodWait as e:
-                time.sleep(e.x)
-
-
+    
+    now = time.time()  
+    diff = now - start  
+  
+    if diff < 1:  
+        return  
+    else:  
+        perc = f"{current * 100 / total:.1f}%"  
+        elapsed_time = round(diff)  
+        speed = current / elapsed_time  
+        remaining_bytes = total - current  
+  
+        if speed > 0:  
+            eta_seconds = remaining_bytes / speed  
+            eta = hrt(eta_seconds, precision=1)  
+        else:  
+            eta = "-"  
+  
+        sp = str(hrb(speed)) + "/s"  
+        tot = hrb(total)  
+        cur = hrb(current)  
+        bar_length = 11  
+        completed_length = int(current * bar_length / total)  
+        remaining_length = bar_length - completed_length  
+        progress = "◆" * completed_length + "◇" * remaining_length  
+  
+        try:  
+            await reply.edit(  
+                f'\n 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 \n├⚡️ {progress}|﹝{perc}﹞ \n├🚀 Speed » {sp} \n├📟 Processed » {cur}\n├🧲 Size - ETA » {tot} - {eta} \n╰─══ ✪ KING PROJECT ✪ ══─★\n'  
+            )  
+        except FloodWait as e:  
+            time.sleep(e.x)
