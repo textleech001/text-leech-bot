@@ -44,3 +44,30 @@ async def leech_audio(_, message: Message):
 
 if __name__ == "__main__":
     app.run()
+    
+# powerd by @kingproject24
+
+from database import Database
+
+class Database:
+    def __init__(self):
+        self.conn = sqlite3.connect("database.db")
+        self.cursor = self.conn.cursor()
+
+    def create_table(self):
+        self.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY,
+                username TEXT
+            );
+        """)
+        self.conn.commit()
+
+    def insert_user(self, id, username):
+        self.cursor.execute("INSERT INTO users (id, username) VALUES (?, ?)", (id, username))
+        self.conn.commit()
+
+    def get_user(self, id):
+        self.cursor.execute("SELECT * FROM users WHERE id = ?", (id,))
+        return self.cursor.fetchone()
+
