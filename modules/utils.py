@@ -68,7 +68,8 @@ timer = Timer()
 
 #Powered By KING
 async def progress_bar(current, total, reply, start):
-    temp()  # yeh function ko call karein
+    #utils.py
+   def temp()  # yeh function ko call karein
     if timer.can_send():
         now = time.time()
         diff = now - start
