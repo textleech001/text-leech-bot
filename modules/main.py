@@ -3,9 +3,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserDeactivated, UserDeactivatedBan, ChatWriteForbidden
 from database import Database
 from info import info
-from flask import Flask , request, jsonify
-app = Flask(_name_) 
-@app.route('/', methods=['GET'])
+
 from info import BOT_TOKEN, BOT_USERNAME, API_ID, API_HASH
 from utils import temp
 
@@ -73,5 +71,12 @@ if __name__ == "__main__":
     app.run()
 
 
-    
+    from flask import Flask, request, jsonify
+app = Flnameme__)
+
+@app.route('/', methods=['GET'])
+def index():
+    return 'Hello World!'
+nameme__ mainin__':
+    app.run(debug=True)
 
