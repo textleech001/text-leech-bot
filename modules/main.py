@@ -59,6 +59,12 @@ async def leech_doc(_, message: Message):
 async def leech_audio(_, message: Message):
     await message.reply_text(text=message.audio.file_id)
 
+import os
+
+print(os.getcwd())
+print(os.listdir())
+
+
 if __name__ == "__main__":
     app.run()
 
