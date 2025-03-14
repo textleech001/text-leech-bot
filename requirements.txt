@@ -22,8 +22,6 @@ pytz
 umongo
 speedtest-cli
 
-pip freeze requirements.txt
-
 Flask==2.0.2
 Flask-SQLAlchemy==2.5.1
 python-telegram-bot==13.7
