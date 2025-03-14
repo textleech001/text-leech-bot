@@ -1,9 +1,25 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserDeactivated, UserDeactivatedBan, ChatWriteForbidden
-
+from database import Database
 from info import BOT_TOKEN, BOT_USERNAME, API_ID, API_HASH
 from utils import temp
+
+from database import Database
+
+db = Database("database.db")
+db.create_table()
+
+Insert a user
+db.insert_user(1, "username")
+
+Get a user
+user = db.get_user(1)
+print(user)
+
+Close the database connection
+db.close_connection()
+
 
 db = Database()
 
@@ -44,5 +60,7 @@ async def leech_audio(_, message: Message):
 
 if __name__ == "__main__":
     app.run()
+
+
     
 
