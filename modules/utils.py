@@ -66,12 +66,9 @@ def hrt(seconds, precision = 0):
 
 timer = Timer()
 
-temp
-# utils.py
-def temp():     # yeh funtion kuch bhi kr skta he
-
-# Powered By KING
+#Powered By KING
 async def progress_bar(current, total, reply, start):
+    temp()  # yeh function ko call karein
     if timer.can_send():
         now = time.time()
         diff = now - start
@@ -94,10 +91,7 @@ async def progress_bar(current, total, reply, start):
             completed_length = int(current * bar_length / total)
             remaining_length = bar_length - completed_length
             progress_bar = "◆" * completed_length + "◇" * remaining_length
-            
             try:
-                await reply.edit(f'\n** 𝐔𝐩𝐥𝐨𝐝𝐢𝐧𝐠 \n├⚡ {progress_bar}|﹝{perc}﹞ \n├🚀 Speed » {sp} \n├📟 Processed » {cur}\n├🧲 Size - ETA » {tot} - {eta} \n╰─══ ✪  KING PROJECT ✪ ══─★**\n') 
+                await reply.edit(f'\n** 𝐔𝐩𝐥𝐨𝐝𝐢𝐧𝐠 \n├⚡️ {progress_bar}|﹝{perc}﹞ \n├🚀 Speed » {sp} \n├📟 Processed » {cur}\n├🧲 Size - ETA » {tot} - {eta} \n╰─══ ✪ KING PROJECT ✪ ══─★**\n')
             except FloodWait as e:
                 time.sleep(e.x)
-
-
