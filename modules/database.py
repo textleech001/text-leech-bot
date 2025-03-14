@@ -50,3 +50,11 @@ class Database:
 
     def close_connection(self):
         self.conn.close()
+
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+
+class Database:
+    def __init__(self):
+        pass
