@@ -19,7 +19,7 @@ db.insert_user(1, "username")
 user = db.get_user(1)
 print(user)
 
-Close the database connection
+
 db.close_connection()
 
 
