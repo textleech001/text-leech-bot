@@ -15,7 +15,7 @@ db.create_table()
 
 db.insert_user(1, "username")
 
-Get a user
+
 user = db.get_user(1)
 print(user)
 
