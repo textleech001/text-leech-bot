@@ -68,10 +68,12 @@ timer = Timer()
 
 #Powered By KING
 async def progress_bar(current, total, reply, start):
-    def temp():
+def temp():
     if timer.can_send():
-        # yeh function ko call karein
-        pass  
+        # Your logic to be executed if the condition is true
+        print("Can send message!")
+    else:
+        print("Cannot send message.")
         now = time.time()
         diff = now - start
         if diff < 1:
@@ -98,4 +100,4 @@ async def progress_bar(current, total, reply, start):
             except FloodWait as e:
                 time.sleep(e.x)
 
-def temp():
+
