@@ -11,7 +11,6 @@ from database import Database
 db = Database("database.db")
 db.create_table()
 
-Insert a user  # Commented out the invalid line
 
 
 db.insert_user(1, "username")
